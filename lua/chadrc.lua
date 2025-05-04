@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "chadracula-evondev",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -16,10 +16,7 @@ M.base46 = {
 M.mason = {
   pkgs = {
     --python lsp/lint/formatter
-    "basedpyright",
     "ruff",
-    "black",
-    "debugpy",
     --ansible lsp/lint/formatter
     "ansible-language-server",
     "ansible-lint",

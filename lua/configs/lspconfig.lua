@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "ansiblels", "lua_ls", "basedpyright", }
+local servers = { "html", "cssls", "ansiblels", "lua_ls", "ruff", }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -36,6 +36,16 @@ lspconfig.ansiblels.setup {
           path = "ansible-lint",
         },
       },
+    },
+  },
+}
+
+lspconfig.ruff.setup {
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
+  init_options = {
+    settings = {
+      args = {"--select=F"},
     },
   },
 }
