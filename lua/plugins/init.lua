@@ -24,6 +24,10 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {ensure_installed = require("configs.treesitter")},
+    build = ":TSUpdate",
+    config = function()
+      local treesitter_config = require("configs.treesitter")
+    require("nvim-treesitter.configs").setup(treesitter_config)
+    end,
   },
 }
