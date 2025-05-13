@@ -8,7 +8,6 @@ return {
     "css",
     "json",
     "yaml",
-    "ansible",
   },
   highlight = {
     enable = true,
