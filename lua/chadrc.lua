@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "chadracula-evondev",
+	theme = "bearded-arc",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -30,6 +30,7 @@ M.mason = {
     "lua-language-server",
   },
 }
+
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {

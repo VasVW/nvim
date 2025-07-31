@@ -30,4 +30,9 @@ return {
     require("nvim-treesitter.configs").setup(treesitter_config)
     end,
   },
+
+  {
+  "nvim-tree/nvim-tree.lua",
+    config = require("configs.nvimtree"),
+  },
 }
