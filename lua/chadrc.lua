@@ -6,7 +6,8 @@
 local M = {}
 
 M.base46 = {
-	theme = "bearded-arc",
+	theme = "doomchad",
+  theme_config = { transparent = true },
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -28,6 +29,7 @@ M.mason = {
     --lua lsp/lint/formatter
     "stylua",
     "lua-language-server",
+    "black",
   },
 }
 
