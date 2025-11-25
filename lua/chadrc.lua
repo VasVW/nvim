@@ -1,13 +1,13 @@
--- This file needs to have same structure as nvconfig.lua 
+-- This file needs to have same structure as nvconfig.lua
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
--- Please read that file to know all available options :( 
+-- Please read that file to know all available options :(
 
 ---@type ChadrcConfig
 local M = {}
 
 M.base46 = {
 	theme = "doomchad",
-  theme_config = { transparent = true },
+	theme_config = { transparent = true },
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -15,22 +15,30 @@ M.base46 = {
 	-- },
 }
 M.mason = {
-  pkgs = {
-    --python lsp/lint/formatter
-    "ruff",
-    --ansible lsp/lint/formatter
-    "ansible-language-server",
-    "ansible-lint",
-    "yamlfix",
-    --css/html lsps
-    "css-lsp",
-    "html-lsp",
-    "prettier",
-    --lua lsp/lint/formatter
-    "stylua",
-    "lua-language-server",
-    "black",
-  },
+	pkgs = {
+		--python lsp/lint/formatter
+		"ruff",
+		"black",
+		--ansible lsp/lint/formatter
+		"ansible-language-server",
+		"ansible-lint",
+		"yamlfix",
+		--css/html lsps
+		"css-lsp",
+		"html-lsp",
+		"prettier",
+		--lua lsp/lint/formatter
+		"stylua",
+		"lua-language-server",
+		"hadolint",
+		--docker
+		"docker-language-server",
+		"dockerfile-language-server",
+		"docker-compose-language-service",
+		--golang
+		"gopls",
+		"goimports",
+	},
 }
 
 -- M.nvdash = { load_on_startup = true }
