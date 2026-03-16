@@ -6,38 +6,34 @@
 local M = {}
 
 M.base46 = {
-	theme = "jabuti",
-	transparency = true,
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  theme = "onenord",
+  transparency = true,
+  -- hl_override = {
+  -- 	Comment = { italic = true },
+  -- 	["@comment"] = { italic = true },
+  -- },
 }
 M.mason = {
-	pkgs = {
-		--python lsp/lint/formatter
-		"ruff",
-		"black",
-		--ansible lsp/lint/formatter
-		"ansible-language-server",
-		"ansible-lint",
-		"yamlfix",
-		--css/html lsps
-		"css-lsp",
-		"html-lsp",
-		"prettier",
-		--lua lsp/lint/formatter
-		"stylua",
-		"lua-language-server",
-		"hadolint",
-		--docker
-		"docker-language-server",
-		"dockerfile-language-server",
-		"docker-compose-language-service",
-		--golang
-		"gopls",
-		"goimports",
-	},
+  pkgs = {
+  "ruff",
+  "black",
+  "ansible-language-server",
+  "ansible-lint",
+  "yaml-language-server",
+  "yamlfix",
+  "css-lsp",
+  "html-lsp",
+  "prettier",
+  "stylua",
+  "lua-language-server",
+  "hadolint",
+  "docker-language-server",
+  "dockerfile-language-server",
+  "docker-compose-language-service",
+  "gopls",
+  "goimports",
+  "gitlab-ci-ls",
+  },
 }
 
 -- M.nvdash = { load_on_startup = true }
