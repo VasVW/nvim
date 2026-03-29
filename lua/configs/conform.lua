@@ -4,7 +4,6 @@ local options = {
 		lua = { "stylua" },
 		go = { "goimports" },
 		yaml = { "prettier" },
-		["yaml.ansible"] = { "ansible-lint" },
 		-- css = { "prettier" },
 		-- html = { "prettier" },
 	},

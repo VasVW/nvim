@@ -41,6 +41,10 @@ local ansible_markers = {
 	"inventory",
 }
 
+-- |==================================|
+-- |============ ansible =============|
+-- |==================================|
+
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 	pattern = { "*.yaml", "*.yml" },
 	callback = function(ev)
